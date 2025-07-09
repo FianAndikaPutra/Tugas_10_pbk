@@ -1,0 +1,350 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "email": "admin@sistemakanan.com",
+      "role": "admin",
+      "fullName": "Administrator",
+      "isActive": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "lastLogin": "2024-12-20T10:30:00.000Z",
+      "avatar": "https://via.placeholder.com/150/ff7f50/ffffff?text=A",
+      "permissions": ["read", "write", "delete", "manage_users", "manage_menu"]
+    },
+    {
+      "id": 2,
+      "username": "manager",
+      "password": "manager123",
+      "email": "manager@sistemakanan.com",
+      "role": "manager",
+      "fullName": "Manager Restoran",
+      "isActive": true,
+      "createdAt": "2024-01-15T08:00:00.000Z",
+      "lastLogin": "2024-12-20T09:15:00.000Z",
+      "avatar": "https://via.placeholder.com/150/4a90e2/ffffff?text=M",
+      "permissions": ["read", "write", "manage_menu", "view_reports"]
+    },
+    {
+      "id": 3,
+      "username": "kasir",
+      "password": "kasir123",
+      "email": "kasir@sistemakanan.com",
+      "role": "cashier",
+      "fullName": "Kasir Restaurant",
+      "isActive": true,
+      "createdAt": "2024-02-01T09:00:00.000Z",
+      "lastLogin": "2024-12-20T08:45:00.000Z",
+      "avatar": "https://via.placeholder.com/150/50c878/ffffff?text=K",
+      "permissions": ["read", "create_orders", "process_payments"]
+    },
+    {
+      "id": 4,
+      "username": "chef",
+      "password": "chef123",
+      "email": "chef@sistemakanan.com",
+      "role": "chef",
+      "fullName": "Head Chef",
+      "isActive": true,
+      "createdAt": "2024-02-15T07:30:00.000Z",
+      "lastLogin": "2024-12-20T07:00:00.000Z",
+      "avatar": "https://via.placeholder.com/150/ff6b6b/ffffff?text=C",
+      "permissions": ["read", "manage_menu", "view_orders", "update_stock"]
+    },
+    {
+      "id": 5,
+      "username": "waiter",
+      "password": "waiter123",
+      "email": "waiter@sistemakanan.com",
+      "role": "waiter",
+      "fullName": "Pelayan Restaurant",
+      "isActive": true,
+      "createdAt": "2024-03-01T10:00:00.000Z",
+      "lastLogin": "2024-12-20T11:20:00.000Z",
+      "avatar": "https://via.placeholder.com/150/9b59b6/ffffff?text=W",
+      "permissions": ["read", "take_orders", "serve_customers"]
+    },
+    {
+      "id": 6,
+      "username": "demo",
+      "password": "demo123",
+      "email": "demo@sistemakanan.com",
+      "role": "demo",
+      "fullName": "Demo User",
+      "isActive": true,
+      "createdAt": "2024-03-15T12:00:00.000Z",
+      "lastLogin": "2024-12-20T12:00:00.000Z",
+      "avatar": "https://via.placeholder.com/150/f39c12/ffffff?text=D",
+      "permissions": ["read"]
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "name": "admin",
+      "displayName": "Administrator",
+      "description": "Full access to all system features",
+      "permissions": ["*"]
+    },
+    {
+      "id": 2,
+      "name": "manager",
+      "displayName": "Manager",
+      "description": "Manage restaurant operations and view reports",
+      "permissions": ["read", "write", "manage_menu", "view_reports"]
+    },
+    {
+      "id": 3,
+      "name": "cashier",
+      "displayName": "Kasir",
+      "description": "Handle orders and payments",
+      "permissions": ["read", "create_orders", "process_payments"]
+    },
+    {
+      "id": 4,
+      "name": "chef",
+      "displayName": "Chef",
+      "description": "Manage kitchen operations and menu",
+      "permissions": ["read", "manage_menu", "view_orders", "update_stock"]
+    },
+    {
+      "id": 5,
+      "name": "waiter",
+      "displayName": "Pelayan",
+      "description": "Take orders and serve customers",
+      "permissions": ["read", "take_orders", "serve_customers"]
+    },
+    {
+      "id": 6,
+      "name": "demo",
+      "displayName": "Demo User",
+      "description": "Limited access for demonstration",
+      "permissions": ["read"]
+    }
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "name": "Nasi Gudeg",
+      "category": "Makanan Utama",
+      "price": 25000,
+      "description": "Nasi dengan gudeg khas Yogyakarta, dilengkapi ayam dan telur",
+      "image": "https://via.placeholder.com/300x200/ff7f50/ffffff?text=Nasi+Gudeg",
+      "isAvailable": true,
+      "preparationTime": 15,
+      "ingredients": ["Nasi", "Gudeg", "Ayam", "Telur", "Sambal"]
+    },
+    {
+      "id": 2,
+      "name": "Soto Ayam",
+      "category": "Makanan Utama",
+      "price": 20000,
+      "description": "Soto ayam dengan kuah bening dan rempah-rempah",
+      "image": "https://via.placeholder.com/300x200/4a90e2/ffffff?text=Soto+Ayam",
+      "isAvailable": true,
+      "preparationTime": 10,
+      "ingredients": ["Ayam", "Kuah Soto", "Mie", "Telur", "Kerupuk"]
+    },
+    {
+      "id": 3,
+      "name": "Gado-Gado",
+      "category": "Makanan Utama",
+      "price": 18000,
+      "description": "Sayuran segar dengan bumbu kacang",
+      "image": "https://via.placeholder.com/300x200/50c878/ffffff?text=Gado-Gado",
+      "isAvailable": true,
+      "preparationTime": 8,
+      "ingredients": ["Sayuran", "Bumbu Kacang", "Lontong", "Kerupuk"]
+    },
+    {
+      "id": 4,
+      "name": "Es Teh Manis",
+      "category": "Minuman",
+      "price": 8000,
+      "description": "Es teh manis segar",
+      "image": "https://via.placeholder.com/300x200/ff6b6b/ffffff?text=Es+Teh",
+      "isAvailable": true,
+      "preparationTime": 3,
+      "ingredients": ["Teh", "Gula", "Es Batu"]
+    },
+    {
+      "id": 5,
+      "name": "Jus Jeruk",
+      "category": "Minuman",
+      "price": 12000,
+      "description": "Jus jeruk segar tanpa pengawet",
+      "image": "https://via.placeholder.com/300x200/9b59b6/ffffff?text=Jus+Jeruk",
+      "isAvailable": true,
+      "preparationTime": 5,
+      "ingredients": ["Jeruk", "Gula", "Es Batu"]
+    },
+    {
+      "id": 6,
+      "name": "Pisang Goreng",
+      "category": "Cemilan",
+      "price": 15000,
+      "description": "Pisang goreng krispy dengan taburan gula",
+      "image": "https://via.placeholder.com/300x200/f39c12/ffffff?text=Pisang+Goreng",
+      "isAvailable": true,
+      "preparationTime": 10,
+      "ingredients": ["Pisang", "Tepung", "Gula", "Minyak"]
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "orderNumber": "ORD-20241220-001",
+      "customerName": "Budi Santoso",
+      "tableNumber": 5,
+      "items": [
+        {
+          "menuId": 1,
+          "name": "Nasi Gudeg",
+          "quantity": 2,
+          "price": 25000,
+          "subtotal": 50000
+        },
+        {
+          "menuId": 4,
+          "name": "Es Teh Manis",
+          "quantity": 2,
+          "price": 8000,
+          "subtotal": 16000
+        }
+      ],
+      "totalAmount": 66000,
+      "status": "completed",
+      "orderTime": "2024-12-20T10:30:00.000Z",
+      "completedTime": "2024-12-20T10:45:00.000Z",
+      "paymentMethod": "cash",
+      "waiterName": "Pelayan Restaurant",
+      "notes": "Pedas sedang"
+    },
+    {
+      "id": 2,
+      "orderNumber": "ORD-20241220-002",
+      "customerName": "Siti Aminah",
+      "tableNumber": 3,
+      "items": [
+        {
+          "menuId": 2,
+          "name": "Soto Ayam",
+          "quantity": 1,
+          "price": 20000,
+          "subtotal": 20000
+        },
+        {
+          "menuId": 5,
+          "name": "Jus Jeruk",
+          "quantity": 1,
+          "price": 12000,
+          "subtotal": 12000
+        }
+      ],
+      "totalAmount": 32000,
+      "status": "preparing",
+      "orderTime": "2024-12-20T11:00:00.000Z",
+      "paymentMethod": "card",
+      "waiterName": "Pelayan Restaurant",
+      "notes": "Tanpa cabe"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Makanan Utama",
+      "description": "Hidangan utama untuk makan siang dan malam",
+      "icon": "🍽️"
+    },
+    {
+      "id": 2,
+      "name": "Minuman",
+      "description": "Minuman segar dan hangat",
+      "icon": "🥤"
+    },
+    {
+      "id": 3,
+      "name": "Cemilan",
+      "description": "Camilan ringan dan dessert",
+      "icon": "🍪"
+    },
+    {
+      "id": 4,
+      "name": "Makanan Penutup",
+      "description": "Dessert dan makanan manis",
+      "icon": "🍰"
+    }
+  ],
+  "tables": [
+    {
+      "id": 1,
+      "number": 1,
+      "capacity": 4,
+      "status": "available",
+      "location": "indoor"
+    },
+    {
+      "id": 2,
+      "number": 2,
+      "capacity": 2,
+      "status": "occupied",
+      "location": "indoor"
+    },
+    {
+      "id": 3,
+      "number": 3,
+      "capacity": 6,
+      "status": "occupied",
+      "location": "indoor"
+    },
+    {
+      "id": 4,
+      "number": 4,
+      "capacity": 4,
+      "status": "available",
+      "location": "outdoor"
+    },
+    {
+      "id": 5,
+      "number": 5,
+      "capacity": 8,
+      "status": "reserved",
+      "location": "indoor"
+    }
+  ],
+  "payments": [
+    {
+      "id": 1,
+      "orderId": 1,
+      "amount": 66000,
+      "method": "cash",
+      "status": "completed",
+      "paidAt": "2024-12-20T10:45:00.000Z",
+      "cashierName": "Kasir Restaurant"
+    },
+    {
+      "id": 2,
+      "orderId": 2,
+      "amount": 32000,
+      "method": "card",
+      "status": "pending",
+      "paidAt": null,
+      "cashierName": "Kasir Restaurant"
+    }
+  ],
+  "system_settings": {
+    "restaurant_name": "Warung Makan Sederhana",
+    "currency": "IDR",
+    "timezone": "Asia/Jakarta",
+    "working_hours": {
+      "open": "08:00",
+      "close": "22:00"
+    },
+    "contact": {
+      "phone": "+62 812-3456-7890",
+      "email": "info@warungsederhana.com",
+      "address": "Jl. Raya Makanan No. 123, Pekanbaru"
+    }
+  }
+}
